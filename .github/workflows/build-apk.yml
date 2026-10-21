@@ -19,6 +19,11 @@ jobs:
         java-version: '17'
         cache: 'gradle'
 
+    # Perintah ini akan otomatis membuat file gradlew dan gradle-wrapper.jar jika belum ada
+    - name: Generate Gradle Wrapper
+      run: |
+        gradle wrapper --gradle-version 8.2
+
     - name: Make gradlew executable
       run: chmod +x gradlew
 
