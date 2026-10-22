@@ -22,7 +22,7 @@ jobs:
     # Perintah ini akan otomatis membuat file gradlew dan gradle-wrapper.jar jika belum ada
     - name: Generate Gradle Wrapper
       run: |
-        gradle wrapper --gradle-version 8.2
+        gradle wrapper --gradle-version 8.5
 
     - name: Make gradlew executable
       run: chmod +x gradlew
